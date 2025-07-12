@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo en Temps Réel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="search-section">
+                <h1><i class="fas fa-cloud-sun"></i> Météo en Temps Réel</h1>
+                <div class="search-box">
+                    <input type="text" id="cityInput" placeholder="Entrez le nom d'une ville..." autocomplete="off">
+                    <button id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <!-- Suppression du sélecteur d'heure de départ -->
+            </div>
+
+            <div class="weather-info" id="weatherInfo">
+                <div class="welcome-message">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2>Recherchez une ville</h2>
+                    <p>Entrez le nom d'une ville pour voir la météo actuelle</p>
+                </div>
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Chargement de la météo...</p>
+            </div>
+
+            <div class="error" id="error" style="display: none;">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p id="errorMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chart-container" style="width:100%;max-width:900px;margin:30px auto;">
+        <canvas id="hourlyChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
