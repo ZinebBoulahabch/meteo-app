@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Application Météo PHP
 
 Cette application météo permet d'afficher la météo en temps réel pour n'importe quelle ville, avec un graphique des températures horaires et une photo de la ville en fond, grâce à l'API WeatherAPI et l'API Pixabay.
@@ -69,9 +68,4 @@ Cette application météo permet d'afficher la météo en temps réel pour n'imp
 - Photos de ville : [Pixabay](https://pixabay.com/)
 - Graphiques : [Chart.js](https://www.chartjs.org/)
 
-## Licence
 
-Projet libre pour usage personnel et éducatif. 
-=======
-# meteo-app
->>>>>>> 5f44487e2b9a5d10a039feb603d0f985dde7f86b
